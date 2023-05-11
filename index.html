@@ -11,37 +11,68 @@
 
   
 <div class="box">
-  <img src="image.png" alt="" class="box-img">
-  <h1>MiauMiez</h1>
-<h5>Developer</h5>
-<p>
-   Hey, I'm MiauMiez! Glad you found that page. 
-</p>
 
-<p>
-    I really like programming 
-    and tech stuff. I have 1+ Year's of experience in Java. I also love creating Addons and Maps for Minecraft Bedrock.
-</p>
 
-<ul>
+<div class="profile-description">
+  <img src="image.png" alt="Profile picture">
+  <h2>MiauMiez</h2>
+  <p>Developer</p>
+  <p> I really like programming and tech stuff. I have 1+ Year's of experience in Java. I also love creating Addons and Maps for Minecraft Bedrock.</p>
+
+  <ul>
 
     <li><a href="https://twitter.com/MiauMiezBedrock"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
     <li><a href="https://discordapp.com/users/968450412506140703"><i class="fa fa-brands fa-discord" aria-hidden="true"></i></a></li>
     <li><a href="https://github.com/MiauMiez"><i class="fa-brands fa-github"></i></a></li>
 
 </ul>
+</div>
 
-<br>
-<br>
+<div>-</div>
 
-<div class="pr">
-    <div id="projects">My projects</div>
-    <br>
-    <a href="https://axiscube.xyz/members#top">member at axiscube</a>
-    <br>
-    <a href="https://mcpedl.com/user/miez/">minecraft creations</a>
+
+<div id="projects-container">
+  
+  <h2 id="projects-title">My projects</h2>
+
+<div class="proaxiscube">
+
+  <a href="https://axiscube.xyz/xyzmg">
+    <img id="axiscube1" src="full_se9aHdh6.png" alt="Axiscube Minecraft map">
+  </a>
+
+  <img id="axiscube2" src="spaces2FybmJuqo8NEOwRzIah73c2Fuploads2FD0ZYFP0ySqZT0IJeToR82FGXq_WNjZWMg.png" alt="The lobby of our map">
+  <div>Together with the other <a href="https://axiscube.xyz/about">members</a> of axiscube, we are creating a Minigames map for Minecraft Bedrock</div>
 
 </div>
+
+
+ 
+</div>
+
+<div id="spotify-container">
+  <h2 id="spotify-title">My Top 10 Songs</h2>
+  <div id="linkspotify"> <a href="https://open.spotify.com/user/txbknr2sgq4l0c19v99zbi4ah">A short overview on my favourite songs</a></div>
+  <iframe id="spotify-embed" src="" width="100%" height="152" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  <button id="change-track-button" onclick="changeTrack()">Change Track</button>
+</div>
+
+<script>
+  const tracks = ['0TpXy0gvSuaJcPaG6o9XcM?utm_source=generator&theme=0', '1odExI7RdWc4BT515LTAwj?utm_source=generator&theme=0', '6h6HgJ66laDl6bY8W59Jdn?utm_source=generator&theme=0', '7aJgh6LCvhXJfD7PHjhG70?si=8b1243a3e8f64207?utm_source=generator&theme=0', '7KoUk2BFyV8HkocdHMUNTw?si=383b44404e114695?utm_source=generator&theme=0', '1IQbVHOsJiZsuEuZqiyN6N?si=07abae4a1a93474c?utm_source=generator&theme=0',  '6y5LixQNwrWROFebIKQfFN?si=cb97c91df426419d?utm_source=generator&theme=0',  ];
+  let currentTrackIndex = Math.floor(Math.random() * tracks.length);
+  const spotifyEmbed = document.getElementById('spotify-embed');
+
+  spotifyEmbed.src = `https://open.spotify.com/embed/track/${tracks[currentTrackIndex]}`;
+
+  function changeTrack() {
+    currentTrackIndex = (currentTrackIndex + 1) % tracks.length;
+    spotifyEmbed.src = `https://open.spotify.com/embed/track/${tracks[currentTrackIndex]}`;
+  }
+</script>
+
+
+<br>
+<br>
 
 
 
