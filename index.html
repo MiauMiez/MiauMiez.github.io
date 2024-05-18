@@ -1,68 +1,107 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <script src="https://kit.fontawesome.com/8a41714086.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>MiauMiez</title>
-  </head>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkliste</title>
+    <style>
+        /* Stil für den Hintergrund */
+        body {
+            background-color: #3C5B6F; /* Hellgrauer Hintergrund */
+            font-family: Arial, sans-serif; /* Standardschriftart */
+            margin: 0;
+            padding: 0;
+            color: #322C2B; /* Textfarbe auf Weiß setzen */
+            text-align: center; /* Zentrieren des Textes */
+        }
+        
+        /* Stil für den Container */
+        #checkliste-container {
+            margin-top: 20px; /* Abstand nach oben */
+            background-color: #DFD0B8; /* Weißer Hintergrund */
+            border-radius: 5px; /* Abgerundete Ecken */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten */
+            padding: 20px; /* Innenabstand */
+            text-align: center; /* Zentrieren des Textes */
 
-  <body>
 
-  
-<div class="box">
+        }
+        
+        /* Stil für die Checkliste */
+        .checkliste-eintrag {
+            font-size: 16px; /* Schriftgröße für Checkliste */
+            display: block; /* Jede Checkliste wird als Blockelement dargestellt */
+            margin-bottom: 10px; /* Abstand zwischen den Einträgen */
+        }
 
+        /* Stil für die Checkliste-Einträge */
+        .checkliste-eintrag label {
+            cursor: pointer; /* Zeiger beim Überfahren des Textes */
+            font-size: 16px; /* Schriftgröße für Checkliste */
+        }
 
-<div class="profile-description">
-  <img src="image.png" alt="Profile picture">
-  <h2>MiauMiez</h2>
-  <p>Developer</p>
-  <p> I really like programming and tech stuff. I have 1+ Year's of experience in Java. I also love creating Addons and Maps for Minecraft Bedrock.</p>
+        .link-container {
+            margin-top: 20px; /* Abstand nach oben */
+            background-color: #DFD0B8; /* Weißer Hintergrund */
+            border-radius: 5px; /* Abgerundete Ecken */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten */
+            padding: 20px; /* Innenabstand */
+            text-align: center; /* Zentrieren des Textes */
+            font-size: 16px; /* Schriftgröße für Links */
+        }
 
-  <ul>
+        .link {
+            color: #322C2B; /* Linkfarbe auf Weiß setzen */
+            display: block; /* Auf neue Zeile setzen */
+            margin-top: 10px; /* Abstand nach oben */
+            text-decoration: none; /* Entfernen der Standard-Unterstreichung */
+            
+        }
 
-    <li><a href="https://twitter.com/MiauMiezBedrock"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
-    <li><a href="https://discordapp.com/users/968450412506140703"><i class="fa fa-brands fa-discord" aria-hidden="true"></i></a></li>
-    <li><a href="https://github.com/MiauMiez"><i class="fa-brands fa-github"></i></a></li>
+        .link:hover {
+            text-decoration: underline; /* Unterstrich beim Überfahren hinzufügen */
+        }
 
-</ul>
+        h2 {
+            font-size: 24px; /* Größere Schriftgröße für h2 */
+            text-decoration: underline; /* Unterstrich für h2 */
+        }
+    </style>
+</head>
+<body>
+
+<div id="checkliste-container">
+    <h2>Checkliste</h2>
+    <!-- Checkliste -->
+    <div class="checkliste-eintrag">
+        <input type="checkbox" id="eintrag1" name="eintrag1">
+        <label for="eintrag1">Geschäftsbrief</label>
+    </div>
+    <div class="checkliste-eintrag">
+        <input type="checkbox" id="eintrag2" name="eintrag2">
+        <label for="eintrag2">Formular</label>
+    </div>
+    <div class="checkliste-eintrag">
+        <input type="checkbox" id="eintrag3" name="eintrag3">
+        <label for="eintrag3">Mappe</label>
+    </div>
+    <div class="checkliste-eintrag">
+        <input type="checkbox" id="eintrag4" name="eintrag4">
+        <label for="eintrag4">Flyer</label>
+    </div>
+    
 </div>
 
-<div>-</div>
+<!-- Links -->
+<div class="link-container">
+    <h2>Links</h2>
 
-
-<div id="projects-container">
-  
-  <h2 id="projects-title">Projects</h2>
-
-<div class="proaxiscube">
-
-  <a href="https://axiscube.xyz/xyzmg">
-    <img id="axiscube1" src="full_se9aHdh6.png" alt="Axiscube Minecraft map">
-  </a>
-
-  <img id="axiscube2" src="spaces2FybmJuqo8NEOwRzIah73c2Fuploads2FD0ZYFP0ySqZT0IJeToR82FGXq_WNjZWMg.png" alt="The lobby of our map">
-  <div>Together with the other <a href="https://axiscube.xyz/about">members</a> of axiscube, we are creating a Minigames map for Minecraft Bedrock</div>
-
+    <a href="https://www.remove.bg/de" target="_blank" rel="noopener noreferre" class="link">Background</a>
+    <a href="https://colorhunt.co/" target="_blank" rel="noopener noreferrer" class="link">Color palettes</a>
+    <a href="https://www.rapidtables.com/convert/color/hex-to-rgb.html" target="_blank" rel="noopener noreferrer" class="link">Hex-to-rgb</a>
+    <a href="https://rechtschreibpruefung24.de/" target="_blank" rel="noopener noreferrer" class="link">Rechtschreibung24</a>
+    
 </div>
-
-
- 
-</div>
-
-
-
-<br>
-<br>
-
-
-
-
-</div>
-
-
-
-
 
 </body>
 </html>
